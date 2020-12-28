@@ -67,9 +67,6 @@ def player(player_cards, player_total):
         print(f"Your current total value is: {player_total}")
         if player_total <= 21:
             player(player_cards, player_total)
-        # elif player_total == 21:
-        #     print("You got BlackJack! You win!")
-        #     play_again()
         else:
             choice = input("You bust! You lose the game!\nWould you like to play again? (Y/N) ").lower()
             if choice == "y":
